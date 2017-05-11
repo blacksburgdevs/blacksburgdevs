@@ -1,0 +1,20 @@
+.navigation-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.navigation-item {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 4.5em;
+  margin: 15px 0 15px 0;
+  text-transform: uppercase;
+  // a {
+  //   opacity: .8;
+  // }
+  // a:hover {
+  //   opacity: 1;
+  // }
+}

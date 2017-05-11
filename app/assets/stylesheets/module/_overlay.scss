@@ -1,0 +1,39 @@
+.overlay {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.overlay-image {
+  width: 450px;
+}
+
+.overlay-divider {
+  height: 90vh;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+.overlay-content {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.overlay-content-right {
+  float: right;
+  width: 50%;
+}
+
+.overlay-content-left {
+  float: left;
+  width: 50%;
+}

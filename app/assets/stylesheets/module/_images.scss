@@ -1,0 +1,22 @@
+.full-image-cover {
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.full-image-cover-home {
+  background-image: image-url('BLACKSBURG.jpg');
+}
+
+.full-image-cover-sub {
+  background-image: image-url("Qualtrax.jpg");
+  height: 60vh;
+}
+
+.main-logo {
+  width: 400px;
+}
+
+.main-header-image {
+  width: 800px;
+}

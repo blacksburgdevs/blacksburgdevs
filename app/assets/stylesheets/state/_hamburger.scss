@@ -1,0 +1,20 @@
+.hamburger-wrapper {
+  &.is-open .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+      transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  &.is-open .bar2 {
+      opacity: 0;
+  }
+  &.is-open .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+      transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+  &.is-open .bar1,
+  &.is-open .bar2,
+  &.is-open .bar3 {
+    background-color: white;
+  }
+
+}

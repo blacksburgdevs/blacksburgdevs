@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | BlacksburgDevs</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="hamburger-wrapper hamburger-wrapper-main" onclick="toggleNavigationMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <%= yield %>
+
+    <div id="navigationOverlay" class="overlay navigation-overlay">
+      <div class="overlay-content overlay-content-left">
+        <div class="container container-centered-vertically">
+					<%= image_tag "COMPUTER.svg", class:"overlay-image" %>
+        </div>
+      </div>
+
+      <div class="overlay-content overlay-content-right">
+				<%= image_tag "DIVIDER.svg", class:"overlay-divider" %>
+        <ul class="navigation-menu">
+          <li class="navigation-item"><%= link_to "Home", '#' %></li>
+          <li class="navigation-item"><%= link_to "Devs", '#' %></li>
+          <li class="navigation-item"><%= link_to "Companies", '#' %></li>
+          <li class="navigation-item"><%= link_to "Groups", '#' %></li>
+          <li class="navigation-item"><%= link_to "Events", '#' %></li>
+          <li class="navigation-item"><%= link_to "Jobs", '#' %></li>
+          <li class="navigation-item"><%= link_to "Resources", '#' %></li>
+        </ul>
+      </div>
+    </div>
+
+		<footer></footer>
+    <script>
+      function toggleNavigationMenu(hamburger) {
+          hamburger.classList.toggle('is-open');
+          var navigationOverlay = document.getElementById('navigationOverlay');
+          navigationOverlay.classList.toggle('is-open');
+      }
+    </script>
+  </body>
+</html>

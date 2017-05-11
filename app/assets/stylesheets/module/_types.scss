@@ -1,0 +1,24 @@
+@import "../globals/all";
+
+mark.red {
+  background: none;
+  color: $accentColor;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.huge {
+  color: white;
+  font-size: 9em;
+  &.accent {
+    color: $accentColor;
+  }
+}
+
+.info-text {
+  color: #333;
+  font-size: 2.3em;
+  font-weight: bold;
+}

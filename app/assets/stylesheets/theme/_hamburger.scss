@@ -1,0 +1,10 @@
+.hamburger-wrapper {
+    .bar1, .bar2, .bar3 {
+        background-color: #333;
+    }
+    // &.is-open .bar1,
+    // &.is-open .bar2,
+    // &.is-open .bar3  {
+    //     background-color: white;
+    // }
+}
