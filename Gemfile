@@ -34,7 +34,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'carrierwave', '~> 1.0'
+gem "mini_magick"
 group :development, :test do
 	gem 'sqlite3', '1.3.12'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

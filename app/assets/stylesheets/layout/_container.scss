@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  padding-top: 50px;
+  padding: 50px 30px 50px 30px;
 }
 
 .container-item {
@@ -24,7 +24,7 @@
 
 .container-centered-vertically {
   align-items: center;
-  // height: 100vh;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   width: 100%;

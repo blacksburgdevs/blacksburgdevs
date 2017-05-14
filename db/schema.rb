@@ -10,6 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170513022256) do
+
+  create_table "devs", force: :cascade do |t|
+    t.string   "name"
+    t.string   "github"
+    t.string   "site"
+    t.string   "twitter"
+    t.string   "company"
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "image"
+  end
 
 end
